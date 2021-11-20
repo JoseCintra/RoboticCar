@@ -1,0 +1,27 @@
+# Syntax Coloring Map For RoboticCar library
+
+# Datatypes (KEYWORD1)
+
+RoboticCar	      KEYWORD1
+
+# Methods and Functions (KEYWORD2)
+
+goAhead		      KEYWORD2
+goBack		      KEYWORD2
+turnLeft       	KEYWORD2
+turnRight         KEYWORD2
+stop		         KEYWORD2
+rotateLeft	      KEYWORD2
+rotateRight	      KEYWORD2
+customDirection   KEYWORD2
+
+# Constants (LITERAL1)
+
+FORWARD		      LITERAL1
+BACKWARD	         LITERAL1
+STOP              LITERAL1
+MIN_SPEED         LITERAL1
+MAX_SPEED         LITERAL1
+
+
+
