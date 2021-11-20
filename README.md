@@ -22,8 +22,11 @@ Where:
 # Methods
 
 To drive the car forwards or backwards, use the methods:
+
 ``car.goAhead(speed);``
+
 or
+
 ``car.goBack(speed);``
 
 Where **speed** is the pwm speed (0 to 100) 
