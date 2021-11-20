@@ -29,4 +29,31 @@ or
 
 ``car.goBack(speed);``
 
-Where **speed** is the pwm speed (0 to 100) 
+Where **speed** is the pwm valued (0 to 100). 
+
+To turn the car to the right or left, use the methods:
+
+``car.turnRight(speed);``
+
+or
+
+``car.turnLeft(speed);``
+
+Where **speed** is the pwm valued (0 to 100).
+
+it is also possible to rotate the car on its axis through the methods:
+``car.rotateRight(speed);``
+
+or
+
+``car.rotateLeft(speed);``
+
+Where **speed** is the pwm valued (0 to 100).
+
+To stop the car simply use: 
+``car.stop();``
+
+Here is also the possibility of creating custom movements, passing the speed and direction of each motor, using the command: 
+``car.customDirection(pwm1, dir1, pwm2, dir2);``
+
+
