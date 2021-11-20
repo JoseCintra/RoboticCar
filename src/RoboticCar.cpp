@@ -49,6 +49,7 @@ RoboticCar::RoboticCar(uint8_t speedPinLeft, uint8_t directionPinLeft, uint8_t s
 }
 
 void RoboticCar::goAhead(uint8_t speed) {
+  stop();
   speed = speedAdjust(speed);
   digitalWrite(_directionPinLeft, FORWARD);
   analogWrite(_speedPinLeft, speed);
@@ -57,6 +58,7 @@ void RoboticCar::goAhead(uint8_t speed) {
 }
 
 void RoboticCar::goBack(uint8_t speed) {
+  stop();
   speed = speedAdjust(speed);
   digitalWrite(_directionPinLeft, BACKWARD);
   analogWrite(_speedPinLeft, speed);
@@ -70,22 +72,25 @@ void RoboticCar::stop() {
 }
 
 void RoboticCar::turnLeft(uint8_t speed) {
+  stop();
   speed = speedAdjust(speed);
   digitalWrite(_directionPinLeft, FORWARD);
-  analogWrite(_speedPinLeft, speedAdjust(speed - 10));
+  analogWrite(_speedPinLeft, speedAdjust(speed * 2 / 3));
   digitalWrite(_directionPinRight, FORWARD);
   analogWrite(_speedPinRight, speed);
 }
 
 void RoboticCar::turnRight(uint8_t speed) {
+  stop();
   speed = speedAdjust(speed);
   digitalWrite(_directionPinLeft, FORWARD);
   analogWrite(_speedPinLeft, speed);
   digitalWrite(_directionPinRight, FORWARD);
-  analogWrite(_speedPinRight, speedAdjust(speed - 10));
+  analogWrite(_speedPinRight, speedAdjust(speed * 2 / 3));
 }
 
 void RoboticCar::rotateLeft(uint8_t speed) {
+  stop();
   speed = speedAdjust(speed);
   digitalWrite(_directionPinLeft, BACKWARD);
   analogWrite(_speedPinLeft, (speed));
@@ -94,6 +99,7 @@ void RoboticCar::rotateLeft(uint8_t speed) {
 }
 
 void RoboticCar::rotateRight(uint8_t speed) {
+  stop();
   speed = speedAdjust(speed);
   digitalWrite(_directionPinLeft, FORWARD);
   analogWrite(_speedPinLeft, (speed));
@@ -102,6 +108,7 @@ void RoboticCar::rotateRight(uint8_t speed) {
 }
 
 void RoboticCar::customDirection(uint8_t speedLeft, uint8_t directionLeft, uint8_t speedRight, uint8_t directionRight) {
+  stop();
   speedLeft = speedAdjust(speedLeft);
   speedRight = speedAdjust(speedRight);
   digitalWrite(_directionPinLeft, directionLeft);
