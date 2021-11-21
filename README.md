@@ -62,6 +62,10 @@ Here is also the possibility of creating custom movements, passing the speed and
 
 For more information see the examples.
 
+# Feedback
+Version 0.2.1 Beta Release.
+Your feedback is important. Register an issue to request a modification to this software. 
+
 **Thanks!**
 
 ![Prototype](https://i.pinimg.com/originals/21/d9/9a/21d99a0a7d1632182bb15655a5ae921f.jpg)
