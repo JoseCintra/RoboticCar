@@ -1,6 +1,7 @@
 /*
 RoboticCar
 Arduino library for controlling the movements of a 2wd robotic car using a H-bridge motor driver L298P
+Version 0.2.1 Beta Reliease
 
 November 2021 by José Cintra
 https://josecintra.com/blog
